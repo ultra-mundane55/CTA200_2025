@@ -10,18 +10,11 @@
   970  vim Hello_world.py 
   972  module load python/3.10.2
   975  gcc Hello_world.c -o Helloworld.exe
-  989  vim output_c.txt
-  990  vim output_py.txt
   991  python Hello_world.py > output_python.txt
   992  vim output_python.txt
   994  ./Helloworld.exe > output_c.txt
   996  vim output_c.txt 
-  997  history 70
-  998  history 70 > history.txt
-  999  ls
- 1000  vim history.txt 
  1001  mv Hello_world.c Hello_world-hussien.c
- 1002  ls
  1003  mv Hello_world.py Hello_world-hussien.py
  1005  vim Hello_world-hussien.c
  1006  vim Hello_world-hussien.py
