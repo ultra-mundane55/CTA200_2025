@@ -1,38 +1,28 @@
-  570  cd ..
-  571  ls
-  572  pwd
-  573  mkdir mydir
-  574  cd mydir
-  575  ls
-  576  mkdir CTA200_2025
-  577  ls
-  578  git init
-  579  touch README.md
-  580  ls
-  581  rm README.md 
-  582  ls
-  583  cd CTA200_2025/
-  584  touch README.md
-  585  ls
-  586  pwd
-  587  vim README.md 
-  588  git add --all
-  589  git commit -m 'made README.md'
-  590  module load python/3.10.2
-  591  pwd
-  592  git remote set-url origin https://github.com/ultra-mundane55/CTA200_2025.git
-  593  git remote add origin https://github.com/ultra-mundane55/CTA200_2025.git
-  594  git remote -v
-  595  git status
-  596  git log
-  597  git push
-  598  git push -u origin master
-  599  git log
-  600  touch Hello_world_hussien.c
-  601  touch Hello_world_hussien.py
-  602  ls
-  603  touch Hello_world.x
-  604  touch output_c.txt
-  605  touch output_python.txt
-  606  history
-  command i used: history 50 > entire pwd/CTA200_2025/history.txt
+  942  cd /home/ahussien
+  944  cd mydir
+  947  cd CTA200_2025/
+  949  cd assignment1
+  962  cd /home/murray/Papers/tmp
+  964  cd /home/ahussien/mydir/CTA200_2025/assignment1
+  965  cp /home/murray/Papers/tmp/Hello_world.c /home/ahussien/mydir/CTA200_2025/assignment1
+  967  cp /home/murray/tmp/Hello_world.py /home/ahussien/mydir/CTA200_2025/assignment1
+  969  vim Hello_world.c
+  970  vim Hello_world.py 
+  972  module load python/3.10.2
+  975  gcc Hello_world.c -o Helloworld.exe
+  989  vim output_c.txt
+  990  vim output_py.txt
+  991  python Hello_world.py > output_python.txt
+  992  vim output_python.txt
+  994  ./Helloworld.exe > output_c.txt
+  996  vim output_c.txt 
+  997  history 70
+  998  history 70 > history.txt
+  999  ls
+ 1000  vim history.txt 
+ 1001  mv Hello_world.c Hello_world-hussien.c
+ 1002  ls
+ 1003  mv Hello_world.py Hello_world-hussien.py
+ 1005  vim Hello_world-hussien.c
+ 1006  vim Hello_world-hussien.py
+ 1008  history 70 > history.txt
