@@ -12,11 +12,10 @@ def bounded_and_diverging():
     z=np.zeros(c.shape, dtype=int) # copy of c with zeros
     # stores information about complex plane
     bounded = np.ones(c.shape, dtype=bool) #t/f - has diverged or not
-    # diverging = np.ones(c.shape) # stores the iteration index for diverging
-    diverging = np.full(c.shape, 1000, dtype=float) 
+    diverging = np.full(c.shape, 1000, dtype=float) # will store the iteration index for diverging, max value for now
 
 
-    for i in range(1000): # NOTE: maybe get rid of this
+    for i in range(1000):
         z=z**2+c # vectorized calculation of z[i,j] * z[i,j] + c[i,j]
         diverged = np.abs(z)>2 # if greater than 2, maps to false, less maps to true for 1000^2 grid each iter
 
